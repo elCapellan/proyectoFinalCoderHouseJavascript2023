@@ -1,0 +1,53 @@
+.encabezado{
+    background-color: skyblue;
+}
+.asterisco{
+    color: red;
+}
+.linDiv{
+    border: 3px solid skyblue;
+    width: 40%;
+    border-radius: 2px;
+}
+textarea{
+    border: 1px solid skyblue;
+}
+
+.pie{
+    background-color: skyblue;
+    height: 15vh;
+}
+.textoPie{
+    text-align: center;
+    color: white;
+}
+.imagenCV{
+    width: 70vw;
+    margin: auto;
+ 
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tituloFoto{
+    font-size: 3rem;
+    color: white;
+}
+
+.textoFoto{
+    color: white;
+    font-style: italic;
+    font-weight: 100;
+}
+.botonFoto{
+    font-size: 1.5rem;
+}

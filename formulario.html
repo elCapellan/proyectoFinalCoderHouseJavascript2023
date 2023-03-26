@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de carga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand mb-0 h1 text-light" href="/index.html">Curricula Maker</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>              
+            </div>
+          </nav>       
+    </header>
+    <br><br>
+    <main class="container">
+    
+        <form id="formulario" class="row">
+            <h2>Información personal</h2><hr class="linDiv">
+            <div class="row">
+                <div class="mb-3 col-sm">
+                    <label class="form-label" for="primerNombre">Primer nombre <span class="asterisco"> *</span></label>
+                    <input class="form-control" type="text" name="primerNombre" id="primerNombre" required>
+                </div>
+                <div class="mb-3 col-sm">
+                    <label class="form-label"for="segundoNombre">Segundo nombre</label>
+                    <input  class="form-control" type="text" name="segundoNombre" id="segundoNombre">
+                </div>
+                <div class="mb-3 col-sm">
+                    <label class="form-label"for="tercerNombre">Tercer nombre </label>
+                    <input  class="form-control" type="text" name="tercerNombre" id="tercerNombre">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-sm">
+                    <label class="form-label"for="primerApellido">Primer apellido<span class="asterisco"> *</span></label>
+                    <input class="form-control" type="text" name="primerApellido" id="primerApellido" required>
+                </div>
+                <div class="mb-3 col-sm">
+                    <label class="form-label"for="segundoApellido">Segundo apellido</label>
+                    <input  class="form-control" type="text" name="segundoApellido" id="segundoApellido">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col-sm">
+                    <label class="form-label"for="nacimiento">Fecha de nacimiento<span class="asterisco"> *</span></label>
+                    <input  class="form-control" type="date" name="nacimiento" id="nacimiento" required>
+                </div>                
+                <div class="mb-3 col-sm">
+                    <label class="form-label" for="dni">Número de DNI<span class="asterisco"> *</span></label>
+                    <input  class="form-control" type="number" name="dni" id="dni" required>
+                </div>
+            </div>
+            <div class="row">           
+                <div class="mb-3 col-sm">
+                    <label class="form-label" for="estadoCivil">Estado Civil<span class="asterisco"> *</span></label>
+                    <select  class="form-control" name="estadoCivil" id="estadoCivil" required>
+                        <option value="Soltero" selected>Soltero/a</option>
+                        <option value="Casado">Casado/a</option>
+                        <option value="Viudo">Viudo/a</option>
+                        <option value="Separado">Separado/a</option>
+                    </select>
+                </div>
+                <div class="mb-3 col-sm">
+                    <label class="form-label" for="nacionalidad">Nacionalidad<span class="asterisco"> *</span></label>
+                    <input  class="form-control" type="text" name="nacionalidad" id="nacionalidad" required>
+                </div>    
+            </div>
+        <div class="row">
+            <div class="mb-3 col">
+                <label class="form-label" for="domicilio">Domicilio/Calle<span class="asterisco"> *</span></label>
+                <input  class="form-control" type="text" name="domicilio" id="domicilio" required>
+            </div>
+            <div class="mb-3 col-lg-2">
+                <label class="form-label" for="altura">Altura<span class="asterisco"> *</span></label>
+                <input  class="form-control" type="number" name="altura" id="altura" required>
+            </div>
+             <div class="mb-3 col">
+                <label class="form-label" for="elegirLocalidad">Localidad<span class="asterisco"> *</span></label>
+                <select class="form-control" id="elegirLocalidad" required>
+                    <option value="">---Elija una localidad---</option>                   
+                </select>  
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="telefonoFijo">Teléfono fijo<span class="asterisco"> *</span></label>
+                <input  class="form-control" type="number" name="telefonoFijo" id="telefonoFijo" required>
+            </div>
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="telefonoMovil">Teléfono móvil<span class="asterisco"> *</span></label>
+                <input  class="form-control" type="number" name="telefonoMovil" id="telefonoMovil" required>
+            </div>
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="email">Dirección de e-mail<span class="asterisco"> *</span></label>
+                <input  class="form-control" type="email" name="email" id="email" required>
+            </div>
+        </div>
+        <h2>Estudios académicos</h2><hr class="linDiv">
+        <div class="row">
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="estudios1">Nivel</label>
+                <select  class="form-control" name="estudios1" id="estudios1" >
+                    <option value="">---Elija una opción---</option>
+                    <option value="Primario">Primario</option>
+                    <option value="Secundario">Secundario</option>
+                    <option value="Terciario">Terciario</option>
+                    <option value="Universitario">Universitario</option>
+                </select>
+            </div>
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="estudios1_institucion">Institución</label>
+                <input  class="form-control" type="text" name="estudios1_institucion" id="estudios1_institucion" >
+            </div>
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="estudios1_titulo">Título</label>
+                <input  class="form-control" type="text" name="estudios1_titulo" id="estudios1_titulo" >
+            </div>
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="estudios1_fin">Fecha finalización</label>
+                <input  class="form-control" type="date" name="estudios1_fin" id="estudios1_fin">
+            </div>
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="estudios1_estado">Estado</label>
+                <select  class="form-control" name="estudios1_estado" id="estudios1_estado" >
+                    <option value="">---Elija una opción---</option>
+                    <option value="Completo">Completo</option>
+                    <option value="Incompleto">Incompleto</option>
+                    <option value="Cursando">Cursando</option>                    
+                </select>                             
+            </div>
+        </div>        
+        <div class="row">
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="estudios2">Nivel</label>
+                <select  class="form-control" name="estudios2" id="estudios2" >
+                    <option value="">---Elija una opción---</option>
+                    <option value="Primario">Primario</option>
+                    <option value="Secundario">Secundario</option>
+                    <option value="Terciario">Terciario</option>
+                    <option value="Universitario">Universitario</option>
+                </select>
+            </div>
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="estudios2_institucion">Institución</label>
+                <input  class="form-control" type="text" name="estudios2_institucion" id="estudios2_institucion" >
+            </div>
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="estudios2_titulo">Título</label>
+                <input  class="form-control" type="text" name="estudios2_titulo" id="estudios2_titulo" >
+            </div>
+            <div class="mb-3 col-sm">
+                <label class="form-label" for="estudios2_fin">Fecha finalización</label>
+                <input  class="form-control" type="date" name="estudios2_fin" id="estudios2_fin">
+            </div>
+            <div class="mb-3 col-sm">
+                <label class="form-check-label form-label " for="casVerEstudios2">Finalizado</label>
+                <select  class="form-control" name="estudios2_estado" id="estudios2_estado" >
+                    <option value="">---Elija una opción---</option>
+                    <option value="Completo">Completo</option>
+                    <option value="Incompleto">Incompleto</option>
+                    <option value="Cursando">Cursando</option>                    
+                </select>
+            </div>
+        </div>
+        <h2>Otros conocimientos</h2><hr class="linDiv">
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="curso1">Curso</label>
+                <input class="form-control" type="text" name="curso1" id="curso1">
+            </div>
+            <div class="mb-3 col">
+                <label for="curso1_inicio">Inicio</label>
+                <input class="form-control" type="date" name="curso1_inicio" id="curso1_inicio">
+            </div>
+            <div class="mb-3 col">
+                <label for="curso1_fin">Finalización</label>
+                <input class="form-control" type="date" name="curso1_fin" id="curso1_fin">
+            </div>
+            <div class="mb-3 col">
+                <label for="curso1_lugar">Establecimiento</label>
+                <input class="form-control" type="text" name="curso1_lugar" id="curso1_lugar">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="curso2">Curso</label>
+                <input class="form-control" type="text" name="curso2" id="curso2">
+            </div>
+            <div class="mb-3 col">
+                <label for="curso2_inicio">Inicio</label>
+                <input class="form-control" type="date" name="curso2_inicio" id="curso2_inicio">
+            </div>
+            <div class="mb-3 col">
+                <label for="curso2_fin">Finalización</label>
+                <input class="form-control" type="date" name="curso2_fin" id="curso2_fin">
+            </div>
+            <div class="mb-3 col">
+                <label for="curso2_lugar">Establecimiento</label>
+                <input class="form-control" type="text" name="curso2_lugar" id="curso2_lugar">
+            </div>
+        </div>
+    <h2>Experiencia laboral</h2><hr class="linDiv">
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="empresa1">Nombre de la empresa</label>
+                <input type="text" name="empresa1" class="form-control" id="empresa1">
+            </div>
+            <div class="mb-3 col">
+                <label for="empresa1_tarea">Tareas desarrolladas</label>
+                <input type="text" name="empresa1_tarea" class="form-control" id="empresa1_tarea">
+            </div>
+            <div class="mb-3 col">
+                <label for="empresa1_inicio">Fecha inicio</label>
+                <input type="date" name="empresa1_inicio" class="form-control" id="empresa1_inicio">
+            </div>
+            <div class="mb-3 col">
+                <label for="empresa1_fin">Fecha cese</label>
+                <input type="date" name="empresa1_fin" class="form-control" id="empresa1_fin">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="empresa2">Nombre de la empresa</label>
+                <input type="text" name="empresa2" class="form-control" id="empresa2">
+            </div>
+            <div class="mb-3 col">
+                <label for="empresa2_tarea">Tareas desarrolladas</label>
+                <input type="text" name="empresa2_tarea" class="form-control" id="empresa2_tarea">
+            </div>
+            <div class="mb-3 col">
+                <label for="empresa2_inicio">Fecha inicio</label>
+                <input type="date" name="empresa2_inicio" class="form-control" id="empresa2_inicio">
+            </div>
+            <div class="mb-3 col">
+                <label for="empresa2_fin">Fecha cese</label>
+                <input type="date" name="empresa2_fin" class="form-control" id="empresa2_fin">
+            </div>
+        </div>
+        <br><br>
+        <h2>Perfil profesional</h2><hr class="linDiv">
+        <div class="row">
+             <textarea name="sobreMi" id="sobreMi" cols="25" rows="5" placeholder="Ej: Empleado organizado y con iniciativa, así como gran capacidad de colaboración. Interesado en ..."></textarea>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 form-check col">
+                <input type="checkbox" class="form-check-input" id="casVer" required>
+                <label class="form-check-label" for="casVer">Acepto las <a href="/politicas.html">políticas de privacidad</a></label>
+            </div>
+            <div class="mb-3">
+                <button  class="btn btn-outline-primary" type="submit" id="botonEnviar">Enviar</button>
+            </div>
+        </div>
+        </form>
+
+    </main>
+    <footer class="pie">
+        <div class="textoPie">
+            <br><br>
+            <p>Todos Los Derechos Reservados © 2023 Curricula Maker</p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>    
+</body>
+</html>
